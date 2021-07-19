@@ -1,0 +1,13 @@
+2021-07-18 23:35:01 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 15616 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-18 23:35:01 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-18 23:35:03 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 2.63 seconds (JVM running for 4.152)
+2021-07-18 23:35:03 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-18 23:35:03 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-18 23:35:03 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 13380 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.155 seconds (JVM running for 2.01)
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-18 23:43:55 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [you, understood, the, concept]
