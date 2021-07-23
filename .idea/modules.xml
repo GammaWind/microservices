@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/microservices/app-config-data/app-config-data.iml" filepath="$PROJECT_DIR$/microservices/app-config-data/app-config-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/common-config/common-config.iml" filepath="$PROJECT_DIR$/microservices/common-config/common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/kafka/kafka.iml" filepath="$PROJECT_DIR$/microservices/kafka/kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/kafka/kafka-admin/kafka-admin.iml" filepath="$PROJECT_DIR$/microservices/kafka/kafka-admin/kafka-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/kafka/kafka-modeel/kafka-modeel.iml" filepath="$PROJECT_DIR$/microservices/kafka/kafka-modeel/kafka-modeel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/microservices/kafka/kafka-producer/kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservices/microservices.iml" filepath="$PROJECT_DIR$/microservices/microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservices/twitter-to-kafka-service/twitter-to-kafka-service.iml" filepath="$PROJECT_DIR$/microservices/twitter-to-kafka-service/twitter-to-kafka-service.iml" />
     </modules>

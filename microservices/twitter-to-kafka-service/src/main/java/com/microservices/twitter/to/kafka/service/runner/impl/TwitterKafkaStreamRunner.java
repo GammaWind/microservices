@@ -2,7 +2,7 @@ package com.microservices.twitter.to.kafka.service.runner.impl;
 
 
 import com.microservices.config.TwitterToKafkaServiceConfigData;
-import com.microservices.twitter.to.kafka.service.listener.TwitterKafkaServiceListener;
+import com.microservices.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
 import com.microservices.twitter.to.kafka.service.runner.StreamRunner;
 import org.springframework.stereotype.Component;
 import twitter4j.*;
@@ -16,12 +16,12 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     private static final Logger LOG = Logger.getLogger(TwitterKafkaStreamRunner.class);
 
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
-    private final TwitterKafkaServiceListener twitterKafkaServiceListener;
+    private final TwitterKafkaStatusListener twitterKafkaStatusListener;
     private TwitterStream twitterStream;
 
-    public TwitterKafkaStreamRunner(TwitterToKafkaServiceConfigData configData, TwitterKafkaServiceListener statusListener) {
+    public TwitterKafkaStreamRunner(TwitterToKafkaServiceConfigData configData, TwitterKafkaStatusListener statusListener) {
         this.twitterToKafkaServiceConfigData = configData;
-        this.twitterKafkaServiceListener = statusListener;
+        this.twitterKafkaStatusListener = statusListener;
     }
 
 
@@ -29,7 +29,7 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     public void start() throws TwitterException{
 
         twitterStream = TwitterStreamFactory.getSingleton();
-        twitterStream.addListener(twitterKafkaServiceListener);
+        twitterStream.addListener(twitterKafkaStatusListener);
         addFilter();
 
 

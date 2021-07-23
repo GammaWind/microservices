@@ -1,0 +1,204 @@
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 15588 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.385 seconds (JVM running for 2.26)
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [you, understood, the, concept]
+2021-07-19 00:37:52 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-19 00:37:52 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.twitter.to.kafka.service.TwitterToKafkaService.main(TwitterToKafkaService.java:28)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:50)
+	at com.microservices.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:33)
+	at com.microservices.twitter.to.kafka.service.TwitterToKafkaService.run(TwitterToKafkaService.java:39)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2021-07-19 00:37:52 [main] INFO  c.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - stream shutting down
+2021-07-19 00:41:10 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 13060 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-19 00:41:10 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.285 seconds (JVM running for 2.163)
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [you, understood, the, concept]
+2021-07-19 00:41:11 [main] INFO  c.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - started filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 00:41:11 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-19 00:41:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-19 00:41:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-19 00:41:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}I don't think this is accurate.
+2021-07-19 00:41:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @sertvurgular: Kafka, Milena’ya yazdığı mektuplarından birinde; “Bazen içinde bulunduğunuz durumu anlatmak için kelimeler aciz kalır. Ba…
+2021-07-19 00:41:25 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @aynayadalan: "Ayrıca insanı iyileştiren sadece insandır yine, tıpkı insana acı verenin sadece insan olması gibi."
+
+-F. Kafka
+2021-07-19 00:41:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}Complete Java Programming Bootcamp 2021 #BigData #learning #machinelearning via https://t.co/eBW8Lmmpx7 https://t.co/Xi8VcVjePO
+2021-07-19 00:41:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}@Luchaumette
+2021-07-19 00:41:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}GoF Design Patterns - Complete Course with Java Examples ($29.99 to FREE) https://t.co/8451xAj5Qp
+2021-07-19 00:41:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}@luggasch @melxad Nice java?
+2021-07-19 00:41:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @sertvurgular: Kafka, Milena’ya yazdığı mektuplarından birinde; “Bazen içinde bulunduğunuz durumu anlatmak için kelimeler aciz kalır. Ba…
+2021-07-19 00:41:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}If you want to learn #rustlang and already know another statically typed programming language like C, C++, Java, C#, Go or TypeScript then I really recommend this article from @fasterthanlime:
+
+https://t.co/jVcR7iYyVO
+
+It's straight to the point and can be read in half an hour.
+2021-07-19 00:41:54 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}Franz Kafka’nın da dediği gibi: “Şimdi bazı şeyleri suskunlukla geçiştireceğim...”
+2021-07-19 00:42:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @saam_codes: Backend devs never argue. I have not seen people from Python background saying Java is bad and vice versa . But many fronte…
+2021-07-19 00:42:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}ランキング:9位「ゲーム」(04:12)
+
+ナビつき! つくってわかる はじめてゲームプ…
+
+価格:￥2,970
+レビュー数:477
+https://t.co/puSORUbhnn
+2021-07-19 00:42:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}❗ランキング:26位❗(ナイト＆週末セール)
+
+「11型カーナビ　フローティング ビッグX 11 XF11NX2」
+メーカ:アルパイン
+
+価格:¥198,000  ✨ポイント5倍✨
+🔥売り切れ間近🔥(04:12)
+
+https://t.co/3q1hZcVeHb
+2021-07-19 00:42:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}❗ランキング：7位❗ (無停電電源装置（UPS）)
+
+「【お得セット】Smart-UPS 1500 LCD 100V+電源タップ 」
+メーカ:
+
+価格:¥65,890(04:12)
+
+https://t.co/JG8VLZNjvX
+2021-07-19 00:42:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @dushyantsingh_d: Follow me for the latest trending technologies.
+
+Facebook:https://t.co/qeeH4hGO4L
+Twitter:https://t.co/lf8ei8Gsir
+Inst…
+2021-07-19 00:42:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @splunk: #ICYMI Distributed tracing is the name of the game, and our own Harnit Singh is here to give you a little walk-through. So step…
+2021-07-19 00:42:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @literlandweb1: "Kafka en la orilla"
+#Murakami https://t.co/lfxLWpv1Z5
+2021-07-19 00:42:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @saam_codes: Backend devs never argue. I have not seen people from Python background saying Java is bad and vice versa . But many fronte…
+2021-07-19 00:42:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @literlandweb1: "Kafka en la orilla"
+#Murakami https://t.co/lfxLWpv1Z5
+2021-07-19 07:14:53 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 5348 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-19 07:14:53 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.092 seconds (JVM running for 1.784)
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [you, understood, the, concept]
+2021-07-19 07:14:54 [main] INFO  c.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - started filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 07:14:54 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-19 07:14:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-19 07:14:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-19 07:14:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @yushcherkhiya: Wissen Technology is looking for Java Developer - Bengaluru. Learn more or Jobvite a friend. If any issues you can share…
+2021-07-19 07:15:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @kucukprenst: Franz Kafka’nın da dediği gibi: “Şimdi bazı şeyleri suskunlukla geçiştireceğim...”
+2021-07-19 07:15:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}ランキング:9位 (楽器、手芸、コレクション)
+
+マスクゴム 痛くなりにくい マスクストラップ にもなる 平タイプ 3ｍｍ幅 4.5m～9m 《 セ......(10:45)
+
+https://t.co/o4WCNxkBiR
+2021-07-19 07:15:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}❗ランキング：18位❗(無停電電源装置（UPS）)
+
+「Smart-UPS 1000 LCD 100V SMT1000J」
+メーカ:SchneiderElectricJapan
+
+価格:¥48,950✨
+🔥売り切れ間近🔥(10:45)
+
+https://t.co/GBEdMImkVQ
+2021-07-19 07:15:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}@taleofsaturn MASIH KAK, langsung aja dm BA biar aku mudah ngedatanya!! Khusus hari ini dan khusus Kak Kafka. 🥺
+2021-07-19 07:15:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}🎯 Dev #Android Sr
+✔️ +2 años Exp #mobile
+✔️ Exp #Java - #Kotlin 
+
+🎯 Dev Backend #PHP
+✔️ 2+ años exp PHP
+✔️ 1+ años exp #Javascript / #Node JS
+🎯 Dev #Backend Ssr
+✔️ 2+ años experiencia  
+✔️  NodeJS / Javascript
+
+📨Para + info y entrevista lorena.bincaz@conexion-hr.com https://t.co/pLz6kjfc9e
+2021-07-19 07:15:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @byLilyV: #FEATURED #COURSES
+
+#Java #Programming Masterclass for #Software #Developers
+
+Learn Java In This #Course And Become a #Compute…
+2021-07-19 07:15:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @mrp: We're hiring these Engineering roles @Trustly in Brazil 🇧🇷
+
+• DevOps Engineer
+• Engineering Manager
+• Front-End Developer
+• Full-S…
+2021-07-19 07:15:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}bayangin ningguang, zhongli, albedo sama bennett ngerujak pake sunsetia
+2021-07-19 07:15:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @EasternStyle1: The function is used to simulate the movement of butterfly wings.#Python #BigData #Analytics #AI #ML #DataScience #IoT #…
+2021-07-19 07:15:35 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}اريدد اجرب
+2021-07-19 07:15:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @EasternStyle1: The function is used to simulate the movement of butterfly wings.#Python #BigData #Analytics #AI #ML #DataScience #IoT #…
+2021-07-19 07:16:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}私もマイクラpeとJavaありますよろしくです(？？)
+2021-07-19 07:16:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}ランキング:6位「パソコン・周辺機器」(10:46)
+
+NIMASO ガラスフィルム iPad Pro 11 (2021 / 2020 / 2018) / iPad Air 第4
+
+価格:￥1,299
+レビュー数:3,964
+https://t.co/U9gBkr3jJF
+2021-07-19 07:16:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @binkylor: 🎯 Dev #Android Sr
+✔️ +2 años Exp #mobile
+✔️ Exp #Java - #Kotlin 
+
+🎯 Dev Backend #PHP
+✔️ 2+ años exp PHP
+✔️ 1+ años exp #Javas…
+2021-07-19 07:16:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @EasternStyle1: The function is used to simulate the movement of butterfly wings.#Python #BigData #Analytics #AI #ML #DataScience #IoT #…
+2021-07-19 07:16:20 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}我是菜逼，一个都没用过
+2021-07-19 07:57:48 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Starting TwitterToKafkaService on Nihar-PC with PID 13380 (C:\code\java\microservices\microservices\twitter-to-kafka-service\target\classes started by nihar in C:\code\java\microservices)
+2021-07-19 07:57:48 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - No active profile set, falling back to default profiles: default
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Started TwitterToKafkaService in 1.128 seconds (JVM running for 1.776)
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - app started...
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - Hello microservices!
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.TwitterToKafkaService - [you, understood, the, concept]
+2021-07-19 07:57:49 [main] INFO  c.m.t.t.k.s.r.i.TwitterKafkaStreamRunner - started filtering twitter stream for keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2021-07-19 07:57:49 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-19 07:58:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-19 07:58:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-19 07:58:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}depan rumah banyak
+2021-07-19 07:58:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}ini mah jambu rujak
+2021-07-19 07:58:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}RT @PinakiLaskar: How to be a #coder?
+#MachineLearning #BigData #Analytics #DataScience #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Ja…
+2021-07-19 07:58:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}【募】自社開発プロジェクトリーダー【事業拡大】
+
+😋最新技術社内研修制度
+😋最自由な社風+年休取得率83％
+😋最自社開発エンジニア
+😋最賞与4カ月+業績賞与
+
+エントリーはこちら！
+#エンジニア転職 #java #自社開発 #プライム案件 #AWS #求人情報 #転職 #求人  #就活
+https://t.co/uWWSoOEbKW https://t.co/DQJMc5y4L2
+2021-07-19 07:58:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}【募】自社開発プロジェクトリーダー【事業拡大】
+
+😋最新技術社内研修制度
+😋最自由な社風+年休取得率83％
+😋最自社開発エンジニア
+😋最賞与4カ月+業績賞与
+
+エントリーはこちら！
+#エンジニア転職 #java #自社開発 #プライム案件 #AWS #求人情報 #転職 #求人  #就活
+https://t.co/uWWSoOEbKW https://t.co/HOLKi1rMXO
+2021-07-19 07:58:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.t.k.s.l.TwitterKafkaServiceListener - twitter status with text {}ランキング:28位「パソコン・周辺機器」(11:28)
+
+WEBカメラ eMeet C960 ウェブカメラ HD1080P 200万画素 90°広角 高画質パソ
+
+価格:￥2,549
+レビュー数:3,275
+https://t.co/22FL3JYbvr

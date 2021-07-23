@@ -35,5 +35,6 @@ build/
 
 
 ###resources##
-/resources/
+
+/twitter-to-kafka-service/src/main/resources/
 /twitter-to-kafka-service/src/main/resources/
